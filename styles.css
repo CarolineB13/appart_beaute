@@ -286,6 +286,9 @@ article img {
     }
 
     body {
+        background-image: url('./images/pampas-mobile.jpg');
+        background-size: cover;
+        background-position: center;
         padding-top: 0; /* Supprime le padding du header fixe */
         padding-bottom: 100px; /* Ajoute un espace pour éviter que le contenu soit masqué sous le footer */
     }
