@@ -9,7 +9,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+/* Correction spécifique pour iOS */
+@supports (-webkit-touch-callout: none) {
+    body {
+        background: url('./images/pampa.jpg') center top no-repeat scroll;
+        background-size: auto 100vh;
+    }
+}
 h1, h2, h3 {
     font-family: 'Dancing Script', cursive; /* Dancing Script pour les titres */
 }
