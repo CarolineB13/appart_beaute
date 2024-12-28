@@ -1,21 +1,29 @@
+/* Image d'arrière-plan */
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('./images/pampa.jpg') center center no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Fix pour iOS */
+@supports (-webkit-touch-callout: none) {
+    #background {
+        background-attachment: scroll;
+        background-size: auto 100vh;
+    }
+}
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding-top: 156px;
     color: #3C3C3C;
-    background-image: url('./images/pampa.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
-/* Correction spécifique pour iOS */
-@supports (-webkit-touch-callout: none) {
-    body {
-        background: url('./images/pampa.jpg') center top no-repeat scroll;
-        background-size: auto 100vh;
-    }
-}
+
 h1, h2, h3 {
     font-family: 'Dancing Script', cursive; /* Dancing Script pour les titres */
 }
@@ -293,8 +301,6 @@ article img {
 
     body {
         background-image: url('./images/pampas-mobile.jpg');
-        background-size: cover;
-        background-position: center;
         padding-top: 0; /* Supprime le padding du header fixe */
         padding-bottom: 100px; /* Ajoute un espace pour éviter que le contenu soit masqué sous le footer */
     }
