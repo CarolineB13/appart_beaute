@@ -34,7 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let index = 0;
 
     function showImage() {
-        carouselContainer.style.transform = `translateX(-${index * 100}%)`;
+        const translateValue = `translateX(-${index * 100}%)`;
+        carouselContainer.style.transform = translateValue;
+        carouselContainer.style.webkitTransform = translateValue; // Préfixe pour Safari
     }
 
     prevButton.addEventListener("click", () => {
