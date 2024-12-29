@@ -49,3 +49,19 @@ document.addEventListener("DOMContentLoaded", () => {
         showImage();
     });
 });
+const swiper = new Swiper('.swiper', {
+    loop: true, // Les images défilent en boucle
+    autoplay: {
+        delay: 3000, // 3 secondes entre chaque image
+        disableOnInteraction: false, // Continue même après interaction
+    },
+    speed: 1000, // Transition douce entre les images
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true, // Permet de cliquer sur les bullets
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});

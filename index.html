@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Appart Beauté Institut - Votre beauté sublimée. Découvrez nos prestations : épilation, onglerie, extensions de cils.">
     <title>Appart Beauté Institut</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link href="stylesheet" href="reset.css">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -42,17 +43,19 @@
     </header>
 
     <main>
-        <section class="carousel">
-            <div class="carousel-container">
-                <img src="./images/institut1.jpg" alt="Photo de l'institut 1">
-                <img src="./images/institut2.jpg" alt="Photo de l'institut 2">
-                <img src="./images/institut3.jpg" alt="Photo de l'institut 4">
-                <img src="./images/institut4.jpg" alt="Photo de l'institut 5">
-            </div>
-            <button class="prev">❮</button>
-            <button class="next">❯</button>
-        </section>
         <h1>Appart & Beauté, votre institut à la Valentine - Marseille</h1>
+        <section class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/institut1.jpg" alt="Photo de l'institut 1"></div>
+                <div class="swiper-slide"><img src="./images/institut2.jpg" alt="Photo de l'institut 2"></div>
+                <div class="swiper-slide"><img src="./images/institut3.jpg" alt="Photo de l'institut 3"></div>
+            </div>
+            <!-- Pagination (bullets) -->
+            <div class="swiper-pagination"></div>
+            <!-- Boutons Previous et Next -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
         <section class="banner">
             <h2>La beauté au cœur de Marseille</h2>
             <div class="text-background">
@@ -63,13 +66,13 @@
             <a href="https://www.planity.com/appart-beaute-13011-marseille" class="cta-button" target="_blank">Prendre Rendez-Vous</a>
         </section>
         <section class="services">
-                <h2>Un savoir-faire unique, une passion pour chaque détail</h2>
-                <div class="text-background">
-                    <div class="inner-border">
-                        <p>Chez Appart & Beauté, Marjorie met à votre disposition une large gamme de prestations adaptées à vos besoins. À travers des soins minutieux et un accompagnement attentionné, elle veille à sublimer votre beauté naturelle tout en vous offrant un moment de détente et de sérénité.</p>
-                    </div>
+            <h2>Un savoir-faire unique, une passion pour chaque détail</h2>  
+            <div class="text-background">
+                <div class="inner-border">    
+                    <p>Chez Appart & Beauté, Marjorie met à votre disposition une large gamme de prestations adaptées à vos besoins. À travers des soins minutieux et un accompagnement attentionné, elle veille à sublimer votre beauté naturelle tout en vous offrant un moment de détente et de sérénité.</p>
                 </div>
-                <div class="articles">
+            </div>
+                    <div class="articles">
                 <article>
                     <img src="./images/epilation.jpeg" alt="cire pour épilation">
                     <h3>Épilation</h3>
@@ -100,6 +103,7 @@
         <p>© 2024 Appart Beauté Institut - Tous droits réservés</p>
         <a href="https://www.planity.com/appart-beaute-13011-marseille" target="_blank">Réserver sur Planity</a>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
