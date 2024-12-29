@@ -25,3 +25,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const carouselContainer = document.querySelector(".carousel-container");
+    const images = document.querySelectorAll(".carousel img");
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
+
+    let index = 0;
+
+    function showImage() {
+        carouselContainer.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    prevButton.addEventListener("click", () => {
+        index = (index > 0) ? index - 1 : images.length - 1;
+        showImage();
+    });
+
+    nextButton.addEventListener("click", () => {
+        index = (index < images.length - 1) ? index + 1 : 0;
+        showImage();
+    });
+});

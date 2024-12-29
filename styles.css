@@ -1,4 +1,12 @@
 /* Image d'arrière-plan */
+@font-face {
+    font-family: 'amsterdamfour_slant_ttf';
+    src: url('./fonts/amsterdam-four-slant-ttf-webfont.woff2') format('woff2'),
+         url('./fonts/amsterdam-four-slant-ttf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 #background {
     position: fixed;
     top: 0;
@@ -25,10 +33,11 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Dancing Script', cursive; /* Dancing Script pour les titres */
+    font-family: 'amsterdamfour_slant_ttf', sans-serif;
+    font-weight: lighter;
     text-align: center;
     max-width: 90%;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 h1 {
     font-size: 3em;
@@ -193,6 +202,46 @@ section {
     font-weight: 500;
     font-size: 1.2em;
 }
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    flex-shrink: 0;
+    height: 700px;
+    object-fit: cover;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
 
 .banner {
     display: flex;
@@ -208,22 +257,42 @@ section {
 .banner h2 {
     margin-bottom: 1rem;
 }
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #8aa199; /* Couleur du bouton */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.cta-button:hover {
+    background-color: #c6d5d0; /* Couleur au survol */
+    transform: translateY(-3px); /* Effet d'élévation */
+    
+}
 
 .text-background { 
-    margin: 0 auto;
+    /*margin: 0 auto;
     background-color: rgb(251 241 233 / 43%);
     padding: 20px;
-    border-radius: 25px;
+    */border-radius: 25px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     position: relative;
 }
 
 .inner-border {
-    border: 3px solid #c6d5d0;
+    /*border: 3px solid #c6d5d0;
     border-radius: 25px;
-    padding: 2rem;
     background-color: transparent;
+    */padding: 2rem;
     text-align: center;
 }
 
@@ -292,10 +361,10 @@ article img {
 
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 1.8em;
+        font-size: 1em;
     }
     h2 {
-        font-size: 1.5em;
+        font-size: 0.8em;
     }
     h3 {
         font-size: 1.3em ;
@@ -327,5 +396,16 @@ article img {
         background-image: url('./images/pampas-mobile.jpg');
         padding-top: 0; /* Supprime le padding du header fixe */
         padding-bottom: 100px; /* Ajoute un espace pour éviter que le contenu soit masqué sous le footer */
+    }
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .carousel {
+        max-width: 90%;
+        height: 350px;
+    }
+    .carousel img {
+        height: 350px;
     }
 }
