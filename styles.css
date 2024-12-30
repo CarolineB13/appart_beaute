@@ -448,9 +448,9 @@ article img {
     display: none;
     justify-content: space-around;
     align-items: center;
-    background-color: #c6d5d0;
+    background-color: #8aa199;
     color: #FFF;
-    padding: 1rem;
+    padding: 1rem 0;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -471,7 +471,7 @@ article img {
 
 .mobile-footer a i {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  
 }
 
 .mobile-footer a:hover {
@@ -590,7 +590,7 @@ article img {
     body {
         background-image: url('./images/pampas-mobile.jpg');
         padding-top: 0; /* Supprime le padding du header fixe */
-        padding-bottom: 100px; /* Ajoute un espace pour éviter que le contenu soit masqué sous le footer */
+        padding-bottom: 80px; /* Ajoute un espace pour éviter que le contenu soit masqué sous le footer */
     }
     .cta-button {
         font-size: 1rem;
