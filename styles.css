@@ -1,12 +1,4 @@
 /* Image d'arrière-plan */
-@font-face {
-    font-family: 'amsterdamfour_slant_ttf';
-    src: url('./fonts/amsterdam-four-slant-ttf-webfont.woff2') format('woff2'),
-         url('./fonts/amsterdam-four-slant-ttf-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 #background {
     position: fixed;
     top: 0;
@@ -387,14 +379,179 @@ article img {
     width: 90%;
     margin-top: 10px;
 }
-
+/* Styles pour le footer */
 .footer {
     background-color: #c6d5d0;
     text-align: center;
-    padding: 1rem;
-    color: #FFF;
+    padding: 2rem;
+    color: #4f4f4f;
     box-sizing: border-box;
+    position: relative;
 }
+
+.footer-content {
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 70%;
+    margin: 0 auto;
+}
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+.footer-row h2 {
+    margin: 0;
+}
+.footer-columns { 
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer-column h3 {
+    margin:0;
+}
+.footer-column p,
+.footer-column a {
+    margin:  0;
+    color: #4f4f4f;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-row img {
+    width: 100px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.footer-row img:hover {
+    opacity: 1;
+}
+
+/* Mobile footer */
+.mobile-footer {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #c6d5d0;
+    color: #FFF;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-footer a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.mobile-footer a i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.mobile-footer a:hover {
+    color: #8aa199;
+}
+/* Modale - Fond */
+.cookie-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.cookie-modal.hidden {
+    display: none;
+}
+
+/* Modale - Contenu */
+.cookie-modal-content {
+    background: #FFF;
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cookie-options {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.cookie-options label {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.cookie-options input {
+    margin-right: 0.5rem;
+}
+
+/* Boutons */
+.cookie-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    background-color: #8aa199;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #5f7d73;
+}
+
+.btn-secondary {
+    background-color: #CCC;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #AAA;
+}
+
 
 @keyframes fadeIn {
     from {
@@ -429,17 +586,7 @@ article img {
     .cards {
         flex-direction: column;
     }
-    .footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        text-align: center;
-        padding: 1rem;
-        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile au-dessus */
-    }
-
+    
     body {
         background-image: url('./images/pampas-mobile.jpg');
         padding-top: 0; /* Supprime le padding du header fixe */
@@ -454,5 +601,39 @@ article img {
     }
     .swiper-slide img {
         height: 350px; 
+    }
+    .footer-content {
+        max-width: 98%;
+    }
+    .footer-row {
+        flex-direction: column;
+    }
+    .footer-columns {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .footer-column {
+        align-items: center;
+    }
+}
+/* Desktop-specific styles */
+/* Media Queries */
+@media screen and (min-width: 769px) {
+    .mobile-footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+   
+
+    .mobile-footer {
+        display: flex;
     }
 }

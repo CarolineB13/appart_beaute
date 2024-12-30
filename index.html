@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Appart Beauté Institut - Votre beauté sublimée. Découvrez nos prestations : épilation, onglerie, extensions de cils.">
     <title>Appart Beauté Institut</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,8 +35,9 @@
         <nav class="navigation">
             <ul>
                 <li><a href="#prestations">Prestations</a></li>
-                <li><a href="#promotions">Promotions</a></li>
+                <li><a href="#galerie">Galerie</a></li>
                 <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#promotions">Promotions</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#blog">Blog</a></li>
             </ul>
@@ -98,12 +100,91 @@
             </p>
         </section>
     </main>
-
     <footer class="footer">
-        <p>© 2024 Appart Beauté Institut - Tous droits réservés</p>
-        <a href="https://www.planity.com/appart-beaute-13011-marseille" target="_blank">Réserver sur Planity</a>
+        <div class="footer-content">
+            <div class="footer-row">
+                <h2>Restons en contact</h3>
+                <a href="#contact" class="cta-button">Contactez-nous</a>
+            </div>
+            <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Coordonnées</h3>
+                <p>Appart & Beauté Institut</p>
+                <p>17 rue de l'Audience, La Valentine </p>
+                <p>13011 Marseille</p>
+                <p><a href="mailto:appartbeauteinstitut@gmail.com">appartbeauteinstitut@gmail.com</a></p>
+                <p><a href="tel:+33613405635">06 13 40 56 35</a></p>
+                <p><a href="https://www.google.fr/maps/dir//17+Rue+de+l'Audience,+13011+Marseille" target="_blank">Itinéraire</a></p>
+            </div>
+    
+            <div class="footer-column">
+                <h3>Informations</h3>
+                <p><a href="#guide-local">Guide Local</a></p>
+                <p><a href="legal/legal.html">Mentions Légales</a></p>
+                <p><a href="#politique-confidentialite">Politique de Confidentialité</a></p>
+                <p><a href="#gestion-cookies">Gestion des cookies</a></p>
+            </div>
+        </div>
+        <div class="footer-row">
+            <p>© 2024 Appart Beauté Institut</p>
+            <a href="https://www.happyclicks.fr" target="_blank">
+                <img src="./images/HappyClicks.png" alt="HappyClicks Logo">
+            </a>
+        </div>
+        </div>
+        
     </footer>
+    
+    <div class="mobile-footer">
+        <a href="https://www.google.fr/maps/dir//17+Rue+de+l'Audience,+13011+Marseille" target="_blank">
+            <i class="fas fa-map-marker-alt"></i><br>
+            <span>Itinéraire</span>
+        </a>
+        <a href="https://www.planity.com/appart-beaute-13011-marseille" target="_blank">
+            <i class="fas fa-calendar-alt"></i><br>
+            <span>Rendez-vous</span>
+        </a>
+        <a href="tel:+33613405635">
+            <i class="fas fa-phone"></i><br>
+            <span>06 13 40 56 35</span>
+        </a>
+    </div>
+    <!-- Modale Gestion des Cookies -->
+    <div id="cookie-modal" class="cookie-modal hidden">
+        <div class="cookie-modal-content">
+            <h2>Gestion des cookies</h2>
+            <p>Nous utilisons des cookies pour optimiser votre expérience. Vous pouvez gérer vos préférences ci-dessous :</p>
+            
+            <div class="cookie-options">
+                <label>
+                    <input type="checkbox" id="necessary-cookies" disabled checked>
+                    Cookies nécessaires (obligatoires) - <small>Assurent le bon fonctionnement du site.</small>
+                </label>
+                <label>
+                    <input type="checkbox" id="analytics-cookies" checked>
+                    Cookies d'analyse - <small>Aident à améliorer votre expérience.</small>
+                </label>
+                <label>
+                    <input type="checkbox" id="marketing-cookies" checked>
+                    Cookies marketing - <small>Offrent des publicités personnalisées.</small>
+                </label>
+            </div>
+    
+            <div class="cookie-actions">
+                <button id="save-cookies" class="btn">Sauvegarder</button>
+                <button id="close-cookies" class="btn btn-secondary">Fermer</button>
+            </div>
+    
+            <p><a href="#politique-cookies">En savoir plus sur notre politique de cookies</a></p>
+        </div>
+    </div>
+    
+
+    
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/cookies.js"></script>
+
 </body>
 </html>
