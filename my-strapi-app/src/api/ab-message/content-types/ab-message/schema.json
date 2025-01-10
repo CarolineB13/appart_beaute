@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ab_messages",
+  "info": {
+    "singularName": "ab-message",
+    "pluralName": "ab-messages",
+    "displayName": "ABMessages",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "sujet": {
+      "type": "text",
+      "required": true
+    },
+    "message": {
+      "type": "text"
+    }
+  }
+}

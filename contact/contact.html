@@ -49,22 +49,33 @@
     <main>
         <h1>Contactez-moi</h1>
         <section class="contact-container">
-            
             <div class="contact-form">
                 <h2>Formulaire de contact</h2>
                 <form id="contactForm">
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="subject">Sujet :</label>
-                    <input type="text" id="subject" name="subject" required>
-
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" rows="13" required></textarea>
-
+                    <div class="form-group">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="user_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstname">Prénom :</label>
+                        <input type="text" id="firstname" name="user_firstname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="user_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone :</label>
+                        <input type="tel" id="phone" name="user_phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet :</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="8" required></textarea>
+                    </div>
                     <button type="submit">Envoyer</button>
                 </form>
             </div>
@@ -76,27 +87,43 @@
 
                 <h2>Retrouvez Marjorie</h2>
                     <p>Marjorie vous accueille dans son institut Appart & Beauté à La Valentine, Marseille. Que ce soit pour une épilation, une pose d’ongles ou des extensions de cils, profitez d’un moment de détente dans un cadre chaleureux. Situé au cœur de Marseille, l’institut est facilement accessible et dispose de places de parking à proximité.</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4106.654801613898!2d5.483435671674933!3d43.29659985291247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bdbaf19e2aa9%3A0xfabc63706b181aad!2sAppart%20Beaut%C3%A9%20Institut!5e0!3m2!1sfr!2sfr!4v1736023566997!5m2!1sfr!2sfr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4106.654801613898!2d5.483435671674933!3d43.29659985291247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bdbaf19e2aa9%3A0xfabc63706b181aad!2sAppart%20Beaut%C3%A9%20Institut!5e0!3m2!1sfr!2sfr!4v1736023566997!5m2!1sfr!2sfr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+        <footer class="footer">
         <div class="footer-content">
             
             <div class="footer-columns">
-                <div class="footer-column">
-                    <h3>Coordonnées</h3>
-                    <p>Appart & Beauté Institut</p>
-                    <p>17 rue de l'Audience, La Valentine </p>
-                    <p>13011 Marseille</p>
-                    <p><a href="mailto:appartbeauteinstitut@gmail.com">appartbeauteinstitut@gmail.com</a></p>
-                    <p><a href="tel:+33613405635">06 13 40 56 35</a></p>
-                </div>
+            <div class="footer-column">
+                <h3>Coordonnées</h3>
+                <p>Appart & Beauté Institut</p>
+                <p>17 rue de l'Audience, La Valentine </p>
+                <p>13011 Marseille</p>
+                <p><a href="mailto:contact@appartbeauteinstitut.com">contact@appartbeauteinstitut.com</a></p>
+                <p><a href="tel:+33613405635">06 13 40 56 35</a></p>
+                <p><a href="https://www.google.fr/maps/dir//17+Rue+de+l'Audience,+13011+Marseille" target="_blank">Itinéraire</a></p>
+            </div>
+    
+            <div class="footer-column">
+                <h3>Informations</h3>
+                <p><a href="#guide-local">Guide Local</a></p>
+                <p><a href="../legal/legal.html">Mentions Légales</a></p>
+                <p><a href="#politique-confidentialite">Politique de Confidentialité</a></p>
+                <p><a href="#gestion-cookies">Gestion des cookies</a></p>
             </div>
         </div>
+        <div class="footer-row">
+            <p>© 2024 Appart Beauté Institut</p>
+            <a href="https://www.happyclicks.fr" target="_blank">
+                <img src="../images/HappyClicks.png" alt="HappyClicks Logo">
+            </a>
+        </div>
+        </div>
+        
     </footer>
+    
     <div class="mobile-footer">
         <a href="https://www.google.fr/maps/dir//17+Rue+de+l'Audience,+13011+Marseille" target="_blank">
             <i class="fas fa-map-marker-alt"></i><br>
@@ -141,13 +168,11 @@
         </div>
     </div>
     
+    <script src="../js/menu.js"></script>
+    <script src="../js/cookies.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="module" src="../js/emailJS.js"></script>
 
     
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="../js/menu.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="../js/cookies.js"></script>
-
 </body>
 </html>
-

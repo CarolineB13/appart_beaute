@@ -1,0 +1,7 @@
+/**
+ * ab-galerie router
+ */
+
+import { factories } from '@strapi/strapi';
+
+export default factories.createCoreRouter('api::ab-galerie.ab-galerie');
