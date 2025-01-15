@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ab-galerie",
     "pluralName": "ab-galeries",
-    "displayName": "ABGalerie"
+    "displayName": "ABGalerie",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,13 +19,13 @@
       "type": "richtext"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "categorie": {
       "type": "enumeration",

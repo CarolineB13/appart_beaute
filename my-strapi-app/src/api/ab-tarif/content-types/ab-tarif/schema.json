@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ab_tarifs",
+  "info": {
+    "singularName": "ab-tarif",
+    "pluralName": "ab-tarifs",
+    "displayName": "ABTarif",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "prestation": {
+      "type": "string",
+      "required": true
+    },
+    "tarif": {
+      "type": "decimal",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "ordrePrestation": {
+      "type": "integer",
+      "required": true
+    },
+    "ab_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::ab-categorie.ab-categorie",
+      "inversedBy": "ab_tarifs"
+    },
+    "promotion": {
+      "type": "boolean",
+      "default": false
+    },
+    "tarifPromotion": {
+      "type": "decimal"
+    }
+  }
+}

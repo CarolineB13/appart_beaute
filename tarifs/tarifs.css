@@ -1,0 +1,76 @@
+/* Section des tarifs */
+#tarifs {
+    margin: 50px auto;
+    max-width: 80%;
+    padding: 20px;
+    background: rgba(251, 241, 233, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Catégories */
+.category {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-left: 5px solid #8aa199; /* Bordure élégante à gauche */
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de catégorie */
+.category h2 {
+    font-size: 2rem;
+    color: #3c3c3c;
+    margin-bottom: 15px;
+    text-transform: capitalize; /* Première lettre en majuscule */
+    letter-spacing: 0.2px; /* Réduit l'espacement pour un look plus doux */
+    border-bottom: 2px solid #8aa199;
+    padding-bottom: 5px;
+    font-weight: bold; /* Accentuation discrète */
+}
+
+/* Prestations */
+.tarif {
+    margin-left: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Ligne séparatrice entre prestations */
+}
+
+.tarif:last-child {
+    border-bottom: none; /* Pas de bordure pour la dernière prestation */
+}
+
+.tarif strong {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.tarif small {
+    font-size: 0.9rem;
+    color: #666;
+    display: block; /* S'affiche en-dessous */
+    margin-top: 5px;
+}
+.promotions {
+    border: 2px solid #d2baa6;
+    background-color: #fff4e5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.promotions h2 {
+    color: #e67e22;
+    font-size: 1.8em;
+}
+
+.promotions .tarif {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px dashed #e67e22;
+}
+
+.promotions .tarif:last-child {
+    border-bottom: none;
+}

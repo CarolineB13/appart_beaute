@@ -369,9 +369,44 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAbCategorieAbCategorie extends Struct.CollectionTypeSchema {
+  collectionName: 'ab_categories';
+  info: {
+    displayName: 'ABCategorie';
+    pluralName: 'ab-categories';
+    singularName: 'ab-categorie';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    ab_tarifs: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::ab-tarif.ab-tarif'
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ab-categorie.ab-categorie'
+    > &
+      Schema.Attribute.Private;
+    nom: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiAbGalerieAbGalerie extends Struct.CollectionTypeSchema {
   collectionName: 'ab_galeries';
   info: {
+    description: '';
     displayName: 'ABGalerie';
     pluralName: 'ab-galeries';
     singularName: 'ab-galerie';
@@ -408,32 +443,38 @@ export interface ApiAbGalerieAbGalerie extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiAbMessageAbMessage extends Struct.CollectionTypeSchema {
-  collectionName: 'ab_messages';
+export interface ApiAbTarifAbTarif extends Struct.CollectionTypeSchema {
+  collectionName: 'ab_tarifs';
   info: {
     description: '';
-    displayName: 'ABMessages';
-    pluralName: 'ab-messages';
-    singularName: 'ab-message';
+    displayName: 'ABTarif';
+    pluralName: 'ab-tarifs';
+    singularName: 'ab-tarif';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
+    ab_categories: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::ab-categorie.ab-categorie'
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    email: Schema.Attribute.Email & Schema.Attribute.Required;
+    description: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
-      'api::ab-message.ab-message'
+      'api::ab-tarif.ab-tarif'
     > &
       Schema.Attribute.Private;
-    message: Schema.Attribute.Text;
-    nom: Schema.Attribute.String & Schema.Attribute.Required;
+    ordrePrestation: Schema.Attribute.Integer & Schema.Attribute.Required;
+    prestation: Schema.Attribute.String & Schema.Attribute.Required;
+    promotion: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     publishedAt: Schema.Attribute.DateTime;
-    sujet: Schema.Attribute.Text & Schema.Attribute.Required;
+    tarif: Schema.Attribute.Decimal & Schema.Attribute.Required;
+    tarifPromotion: Schema.Attribute.Decimal;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -949,8 +990,9 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::ab-categorie.ab-categorie': ApiAbCategorieAbCategorie;
       'api::ab-galerie.ab-galerie': ApiAbGalerieAbGalerie;
-      'api::ab-message.ab-message': ApiAbMessageAbMessage;
+      'api::ab-tarif.ab-tarif': ApiAbTarifAbTarif;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
