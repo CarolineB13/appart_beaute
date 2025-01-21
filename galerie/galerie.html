@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Appart Beauté Institut - Votre beauté sublimée. Découvrez nos prestations : épilation, onglerie, extensions de cils.">
-    <title>Contact - Appart Beauté Institut</title>
+    <meta name="description" content="Galerie de l'Institut Appart Beauté - Découvrez nos prestations en images.">
+    <title>Galerie - Appart Beauté Institut</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="galerie.css">
 </head>
 <body>
     <!-- Image d'arrière-plan -->
@@ -36,63 +36,24 @@
         <nav class="navigation">
             <ul>
                 <li><a href="../index.html"><i class="fas fa-home"></i></a></li>
-                <li><a href="#prestations">Prestations</a></li>
-                <li><a href="../galerie/galerie.html">Galerie</a></li>
+                <li><a href="../prestations/prestations.html">Prestations</a></li>
+                <li><a href="#galerie">Galerie</a></li>
                 <li><a href="../tarifs/tarifs.html">Tarifs</a></li>
                 <li><a href="../index.html#promotions">Promotions</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="../blog/blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Contactez-moi</h1>
-        <section class="contact-container">
-            <div class="contact-form">
-                <h2>Formulaire de contact</h2>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Nom :</label>
-                        <input type="text" id="name" name="user_name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="firstname">Prénom :</label>
-                        <input type="text" id="firstname" name="user_firstname" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email :</label>
-                        <input type="email" id="email" name="user_email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Téléphone :</label>
-                        <input type="tel" id="phone" name="user_phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Sujet :</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message :</label>
-                        <textarea id="message" name="message" rows="8" required></textarea>
-                    </div>
-                    <button type="submit">Envoyer</button>
-                </form>
-            </div>
-            <div class="contact-info">
-                <h2>Les horaires</h2>
-                <p>Lundi - Vendredi : 9h - 18h</p>
-                <p>Samedi : 10h - 16h</p>
-                <p>Dimanche : Fermé</p>
+        <h1>Galerie</h1>
+        <div id="filters" class="filter-bar"></div>
+        <div id="gallery" class="masonry-gallery"></div>
 
-                <h2>Retrouvez Marjorie</h2>
-                    <p>Marjorie vous accueille dans son institut Appart & Beauté à La Valentine, Marseille. Que ce soit pour une épilation, une pose d’ongles ou des extensions de cils, profitez d’un moment de détente dans un cadre chaleureux. Situé au cœur de Marseille, l’institut est facilement accessible et dispose de places de parking à proximité.</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4106.654801613898!2d5.483435671674933!3d43.29659985291247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bdbaf19e2aa9%3A0xfabc63706b181aad!2sAppart%20Beaut%C3%A9%20Institut!5e0!3m2!1sfr!2sfr!4v1736023566997!5m2!1sfr!2sfr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </section>
     </main>
 
-        <footer class="footer">
+    <footer class="footer">
         <div class="footer-content">
             
             <div class="footer-columns">
@@ -167,12 +128,10 @@
             <p><a href="#politique-cookies">En savoir plus sur notre politique de cookies</a></p>
         </div>
     </div>
-    
+
     <script src="../js/menu.js"></script>
     <script src="../js/cookies.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="module" src="../js/emailJS.js"></script>
-
-    
+    <script src="../js/galerie.js"></script>
+  
 </body>
 </html>
