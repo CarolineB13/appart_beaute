@@ -48,6 +48,10 @@ article h2 {
 }
 
 /* Listes des détails de chaque prestation */
+
+article p {
+    font-size: 1.6rem;
+}
 article ul {
     list-style: none;
     padding: 0;
@@ -86,7 +90,7 @@ article ul li:last-child {
     article img {
         height: 250px;
     }
-    p {
+    article p {
         font-size: 1.3em;
     }
     article ul li {
