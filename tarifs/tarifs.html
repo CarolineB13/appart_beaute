@@ -37,22 +37,127 @@
             <ul>
                 <li><a href="../index.html"><i class="fas fa-home"></i></a></li>
                 <li><a href="../prestations/prestations.html">Prestations</a></li>
-                <li><a href="../galerie/galerie.html">Galerie</a></li>
                 <li><a href="#tarifs">Tarifs</a></li>
-                <li><a href="../index.html#promotions">Promotions</a></li>
                 <li><a href="../contact/contact.html">Contact</a></li>
-                <li><a href="../blog/blog.html">Blog</a></li>
                 <li><a href="https://www.instagram.com/appartbeaute_institut/" target="_blank"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Nos Tarifs</h1>
+        <div class="filtre-tarifs">
+            <!-- Texte d'introduction -->
+            <label for="filtre-select" class="filtre-label">Choisissez une prestation</label>
+          
+            <!-- Liste déroulante mobile -->
+            <div class="filtre-tarifs custom-dropdown-mobile">
+                <div class="dropdown-label">Choisissez une prestation</div>
+                <div class="dropdown-selected" id="dropdownSelected">Toutes les prestations</div>
+                <ul class="dropdown-options" id="dropdownOptions">
+                  <li data-value="all" class="active">Toutes les prestations</li>
+                  <li data-value="epilation">Épilation</li>
+                  <li data-value="onglerie">Onglerie</li>
+                  <li data-value="cils">Extensions de cils</li>
+                </ul>
+              </div>
+              
+          
+            <!-- Boutons desktop -->
+            <div class="filtre-boutons">
+              <button data-filter="all" class="active">Tout</button>
+              <button data-filter="epilation">Épilation</button>
+              <button data-filter="onglerie">Onglerie</button>
+              <button data-filter="cils">Extensions de cils</button>
+            </div>
+          </div>
+          
         <section id="tarifs">
             <div id="tarifs-container">
-                <!-- Les tarifs seront injectés ici dynamiquement par JavaScript -->
+              <div class="category" data-category="epilation">
+                <h2>Épilation - Visage</h2>
+                <div class="tarif"><strong>Lèvre</strong> - 8 €</div>
+                <div class="tarif"><strong>Menton</strong> - 8 €</div>
+                <div class="tarif"><strong>Joues</strong> - 10 €</div>
+                <div class="tarif"><strong>Nez</strong> - 5 €</div>
+              </div>
+          
+              <div class="category" data-category="epilation">
+                <h2>Épilation - Corps</h2>
+                <div class="tarif"><strong>Aisselles</strong> - 10 €</div>
+                <div class="tarif"><strong>Maillot simple ou échancré</strong> - 19 €</div>
+                <div class="tarif"><strong>Maillot intégral</strong> - 25 €</div>
+                <div class="tarif"><strong>Demi jambes</strong> - 17 €</div>
+                <div class="tarif"><strong>Cuisses</strong> - 19 €</div>
+                <div class="tarif"><strong>Jambes entières</strong> - 25 €</div>
+                <div class="tarif"><strong>Demi bras</strong> - 15 €</div>
+                <div class="tarif"><strong>Bras</strong> - 15 €</div>
+              </div>
+          
+              <div class="category" data-category="epilation">
+                <h2>Forfaits</h2>
+                <div class="tarif"><strong>Aisselles + maillot simple ou échancré + demi jambes</strong> - 41 €</div>
+                <div class="tarif"><strong>Aisselles + maillot intégral + demi jambes</strong> - 47 €</div>
+                <div class="tarif"><strong>Aisselles + maillot simple ou échancré + cuisses</strong> - 43 €</div>
+                <div class="tarif"><strong>Aisselles + maillot intégral + cuisses</strong> - 49 €</div>
+                <div class="tarif"><strong>Aisselles + maillot simple ou échancré + jambes entières</strong> - 49 €</div>
+                <div class="tarif"><strong>Aisselles + maillot intégral + jambes entières</strong> - 55 €</div>
+              </div>
+          
+              <div class="category" data-category="epilation">
+                <h2>Épilation - Homme</h2>
+                <div class="tarif"><strong>Sourcils</strong> - 10 €</div>
+                <div class="tarif"><strong>Joues</strong> - 10 €</div>
+                <div class="tarif"><strong>Nez ou oreilles</strong> - 8 €</div>
+                <div class="tarif"><strong>Dos</strong> - 26 €</div>
+                <div class="tarif"><strong>Torse</strong> - 26 €</div>
+                <div class="tarif"><strong>Épaules</strong> - 10 €</div>
+                <div class="tarif"><strong>Jambes entières</strong> - 35 €</div>
+                <div class="tarif"><strong>Demi bras</strong> - 19 €</div>
+                <div class="tarif"><strong>Bras entiers</strong> - 25 €</div>
+                <div class="tarif"><strong>Dos + torse</strong> - 45 €</div>
+              </div>
+          
+              <div class="category" data-category="onglerie">
+                <h2>Onglerie - Ongles en Gel</h2>
+                <div class="tarif"><strong>Pose de gel sur ongles naturels</strong> - 40 €</div>
+                <div class="tarif"><strong>Pose de gel avec capsules</strong> - 55 €</div>
+                <div class="tarif"><strong>Comblage</strong> - 40 €</div>
+                <div class="tarif"><strong>Dépose de gel</strong> - 20 €</div>
+              </div>
+          
+              <div class="category" data-category="onglerie">
+                <h2>Onglerie - Semi Permanent</h2>
+                <div class="tarif"><strong>Vernis semi-permanent mains</strong> - 30 €</div>
+                <div class="tarif"><strong>Vernis semi-permanent</strong> - 30 €</div>
+                <div class="tarif"><strong>Dépose de vernis semi-permanent</strong> - 10 €</div>
+              </div>
+          
+              <div class="category" data-category="cils">
+                <h2>Extension de Cils - Rehaussement</h2>
+                <div class="tarif"><strong>Rehaussement de cils avec teinture</strong> - 70 €</div>
+              </div>
+          
+              <div class="category" data-category="cils">
+                <h2>Extension de Cils - Cil à Cil</h2>
+                <div class="tarif"><strong>Pose complète cil à cil</strong> - 70 €</div>
+                <div class="tarif"><strong>Remplissage cil à cil jusqu’à 3 semaines</strong> - 45 €</div>
+              </div>
+          
+              <div class="category" data-category="cils">
+                <h2>Extension de Cils - Hybride</h2>
+                <div class="tarif"><strong>Pose complète hybride</strong> - 80 €</div>
+                <div class="tarif"><strong>Remplissage hybride jusqu’à 3 semaines</strong> - 55 €</div>
+              </div>
+          
+              <div class="category" data-category="cils">
+                <h2>Extension de Cils - Volume Russe</h2>
+                <div class="tarif"><strong>Pose complète volume russe</strong> - 90 €</div>
+                <div class="tarif"><strong>Remplissage volume russe jusqu’à 3 semaines</strong> - 60 €</div>
+                <div class="tarif"><strong>Dépose extensions de cils</strong> - 15 €</div>
+              </div>
             </div>
-        </section>
+          </section>
+          
     </main>
     <footer class="footer">
         <div class="footer-content">
@@ -73,10 +178,7 @@
         
                 <div class="footer-column">
                     <h3>Informations</h3>
-                    <p><a href="#guide-local">Guide Local</a></p>
                     <p><a href="../legal/legal.html">Mentions Légales</a></p>
-                    <p><a href="#politique-confidentialite">Politique de Confidentialité</a></p>
-                    <p><a href="#gestion-cookies">Gestion des cookies</a></p>
                 </div>
             </div>
             <div class="footer-row">
@@ -103,39 +205,11 @@
                 <span>06 13 40 56 35</span>
             </a>
         </div>
-        <!-- Modale Gestion des Cookies -->
-        <div id="cookie-modal" class="cookie-modal hidden">
-            <div class="cookie-modal-content">
-                <h2>Gestion des cookies</h2>
-                <p>Nous utilisons des cookies pour optimiser votre expérience. Vous pouvez gérer vos préférences ci-dessous :</p>
-                
-                <div class="cookie-options">
-                    <label>
-                        <input type="checkbox" id="necessary-cookies" disabled checked>
-                        Cookies nécessaires (obligatoires) - <small>Assurent le bon fonctionnement du site.</small>
-                    </label>
-                    <label>
-                        <input type="checkbox" id="analytics-cookies" checked>
-                        Cookies d'analyse - <small>Aident à améliorer votre expérience.</small>
-                    </label>
-                    <label>
-                        <input type="checkbox" id="marketing-cookies" checked>
-                        Cookies marketing - <small>Offrent des publicités personnalisées.</small>
-                    </label>
-                </div>
-        
-                <div class="cookie-actions">
-                    <button id="save-cookies" class="btn">Sauvegarder</button>
-                    <button id="close-cookies" class="btn btn-secondary">Fermer</button>
-                </div>
-        
-                <p><a href="#politique-cookies">En savoir plus sur notre politique de cookies</a></p>
-            </div>
-        </div>
+
         
     <script src="../js/menu.js"></script>
-    <script src="../js/cookies.js"></script>
     <script src="../js/tarifs.js"></script>
+    <script src="../js/filtre-tarifs.js"></script>
 
 </body>
 </html>

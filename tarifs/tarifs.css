@@ -74,3 +74,175 @@
 .promotions .tarif:last-child {
     border-bottom: none;
 }
+/* Zone des filtres */
+.filtre-tarifs {
+    text-align: center;
+    margin: 30px auto;
+  }
+  
+  .filtre-label {
+    display: none;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #3c3c3c;
+    font-size: 1.1rem;
+  }
+
+  /* Beau select pour mobile */
+  #filtre-select {
+    display: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    background-color: #fbeee9;
+    border: 1px solid #8aa199;
+    border-radius: 25px;
+    padding: 10px 40px 10px 15px; /* padding à droite pour la flèche */
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #3c3c3c;
+  
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='12' height='8' viewBox='0 0 12 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238aa199' stroke-width='2' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center;
+    background-size: 12px 8px;
+  
+    width: 100%;
+    max-width: 280px;
+    box-sizing: border-box;
+    margin: 0 auto 15px auto;
+    display: block;
+  }
+  
+  
+  
+  .filtre-boutons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .filtre-boutons button {
+    background-color: #fbeee9;
+    border: 1px solid #8aa199;
+    color: #3c3c3c;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  
+  .filtre-boutons button:hover {
+    background-color: #8aa199;
+    color: white;
+  }
+  
+  .filtre-boutons button.active {
+    background-color: #8aa199;
+    color: white;
+    font-weight: 600;
+  }
+  
+  /* Responsive : mobile */
+  @media screen and (max-width: 480px) {
+    .filtre-boutons {
+      display: none;
+    }
+  
+    .filtre-label,
+  #filtre-select {
+    display: block;
+    text-align: center;
+  }
+  }
+  /* Dropdown mobile custom */
+.custom-dropdown-mobile {
+    display: none;
+    max-width: 280px;
+    margin: 0 auto 30px auto;
+    position: relative;
+    font-size: 0.95rem;
+  }
+  
+  .dropdown-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #3c3c3c;
+    text-align: center;
+  }
+  
+  .dropdown-selected {
+    background-color: #fbeee9;
+    border: 1px solid #8aa199;
+    padding: 10px 40px 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  
+  .dropdown-selected::after {
+    content: "▼";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    color: #8aa199;
+    pointer-events: none;
+  }
+  
+  
+  .dropdown-options {
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+    border: 1px solid #8aa199;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .dropdown-options li {
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .dropdown-options li:hover,
+  .dropdown-options li.active {
+    background-color: #8aa199;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  /* Show dropdown only on mobile */
+  @media screen and (max-width: 480px) {
+    .custom-dropdown-mobile {
+      display: block;
+    }
+  
+    .filtre-boutons {
+      display: none;
+    }
+  
+    #filtre-select, .filtre-label {
+      display: none;
+    }
+  }
+  
