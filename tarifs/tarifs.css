@@ -42,16 +42,11 @@
 }
 
 .tarif strong {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #333;
+   
 }
 
-.tarif small {
-    font-size: 0.9rem;
-    color: #666;
-    display: block; /* S'affiche en-dessous */
-    margin-top: 5px;
-}
 .promotions {
     border: 2px solid #d2baa6;
     background-color: #fff4e5;
@@ -148,7 +143,7 @@
     color: white;
     font-weight: 600;
   }
-  
+
   /* Responsive : mobile */
   @media screen and (max-width: 480px) {
     .filtre-boutons {

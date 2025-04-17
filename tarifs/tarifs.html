@@ -44,7 +44,7 @@
         </nav>
     </header>
     <main>
-        <h1>Nos Tarifs</h1>
+        <h1>Tarifs</h1>
         <div class="filtre-tarifs">
             <!-- Texte d'introduction -->
             <label for="filtre-select" class="filtre-label">Choisissez une prestation</label>
@@ -55,9 +55,10 @@
                 <div class="dropdown-selected" id="dropdownSelected">Toutes les prestations</div>
                 <ul class="dropdown-options" id="dropdownOptions">
                   <li data-value="all" class="active">Toutes les prestations</li>
-                  <li data-value="epilation">Épilation</li>
                   <li data-value="onglerie">Onglerie</li>
+                  <li data-value="regard">Le Regard</li>
                   <li data-value="cils">Extensions de cils</li>
+                  <li data-value="epilation">Épilation</li>
                 </ul>
               </div>
               
@@ -65,96 +66,106 @@
             <!-- Boutons desktop -->
             <div class="filtre-boutons">
               <button data-filter="all" class="active">Tout</button>
-              <button data-filter="epilation">Épilation</button>
               <button data-filter="onglerie">Onglerie</button>
+              <button data-filter="regard">Le Regard</button>
               <button data-filter="cils">Extensions de cils</button>
+              <button data-filter="epilation">Épilation</button>
             </div>
           </div>
           
         <section id="tarifs">
             <div id="tarifs-container">
-              <div class="category" data-category="epilation">
-                <h2>Épilation - Visage</h2>
-                <div class="tarif"><strong>Lèvre</strong> - 8 €</div>
-                <div class="tarif"><strong>Menton</strong> - 8 €</div>
-                <div class="tarif"><strong>Joues</strong> - 10 €</div>
-                <div class="tarif"><strong>Nez</strong> - 5 €</div>
-              </div>
-          
-              <div class="category" data-category="epilation">
-                <h2>Épilation - Corps</h2>
-                <div class="tarif"><strong>Aisselles</strong> - 10 €</div>
-                <div class="tarif"><strong>Maillot simple ou échancré</strong> - 19 €</div>
-                <div class="tarif"><strong>Maillot intégral</strong> - 25 €</div>
-                <div class="tarif"><strong>Demi jambes</strong> - 17 €</div>
-                <div class="tarif"><strong>Cuisses</strong> - 19 €</div>
-                <div class="tarif"><strong>Jambes entières</strong> - 25 €</div>
-                <div class="tarif"><strong>Demi bras</strong> - 15 €</div>
-                <div class="tarif"><strong>Bras</strong> - 15 €</div>
-              </div>
-          
-              <div class="category" data-category="epilation">
-                <h2>Forfaits</h2>
-                <div class="tarif"><strong>Aisselles + maillot simple ou échancré + demi jambes</strong> - 41 €</div>
-                <div class="tarif"><strong>Aisselles + maillot intégral + demi jambes</strong> - 47 €</div>
-                <div class="tarif"><strong>Aisselles + maillot simple ou échancré + cuisses</strong> - 43 €</div>
-                <div class="tarif"><strong>Aisselles + maillot intégral + cuisses</strong> - 49 €</div>
-                <div class="tarif"><strong>Aisselles + maillot simple ou échancré + jambes entières</strong> - 49 €</div>
-                <div class="tarif"><strong>Aisselles + maillot intégral + jambes entières</strong> - 55 €</div>
-              </div>
-          
-              <div class="category" data-category="epilation">
-                <h2>Épilation - Homme</h2>
-                <div class="tarif"><strong>Sourcils</strong> - 10 €</div>
-                <div class="tarif"><strong>Joues</strong> - 10 €</div>
-                <div class="tarif"><strong>Nez ou oreilles</strong> - 8 €</div>
-                <div class="tarif"><strong>Dos</strong> - 26 €</div>
-                <div class="tarif"><strong>Torse</strong> - 26 €</div>
-                <div class="tarif"><strong>Épaules</strong> - 10 €</div>
-                <div class="tarif"><strong>Jambes entières</strong> - 35 €</div>
-                <div class="tarif"><strong>Demi bras</strong> - 19 €</div>
-                <div class="tarif"><strong>Bras entiers</strong> - 25 €</div>
-                <div class="tarif"><strong>Dos + torse</strong> - 45 €</div>
-              </div>
-          
               <div class="category" data-category="onglerie">
-                <h2>Onglerie - Ongles en Gel</h2>
-                <div class="tarif"><strong>Pose de gel sur ongles naturels</strong> - 40 €</div>
-                <div class="tarif"><strong>Pose de gel avec capsules</strong> - 55 €</div>
-                <div class="tarif"><strong>Comblage</strong> - 40 €</div>
-                <div class="tarif"><strong>Dépose de gel</strong> - 20 €</div>
+                <h2>Les Ongles en Gel</h2>
+                <div class="tarif"><strong>Pose de Gel sur Ongles Naturels</strong> – 40 €</div>
+                <div class="tarif"><strong>Pose de Gel avec Capsule</strong> – 55 €</div>
+                <div class="tarif"><strong>Comblage</strong> – 40 €</div>
+                <div class="tarif"><strong>Dépose Gel</strong> – 20 €</div>
+                <div class="tarif"><strong>Réparation d’un Ongle</strong> – 5 €</div>
+                <div class="tarif"><strong>Décorations Ongles</strong> – 5 € (ou 0,50 € par doigt)</div>
               </div>
-          
+
               <div class="category" data-category="onglerie">
-                <h2>Onglerie - Semi Permanent</h2>
-                <div class="tarif"><strong>Vernis semi-permanent mains</strong> - 30 €</div>
-                <div class="tarif"><strong>Vernis semi-permanent</strong> - 30 €</div>
-                <div class="tarif"><strong>Dépose de vernis semi-permanent</strong> - 10 €</div>
+                <h2>Les Vernis Semi-Permanents</h2>
+                <div class="tarif"><strong>Vernis Semi-Permanent Mains</strong> – 30 €</div>
+                <div class="tarif"><strong>Vernis Semi-Permanent Pieds</strong> – 30 €</div>
+                <div class="tarif"><strong>Dépose Vernis Semi-Permanent</strong> – 10 €</div>
+                <div class="tarif"><strong>Vernis Semi-Permanent Mains + Dépose</strong> – 30 €</div>
+                <div class="tarif"><strong>Vernis Semi-Permanent Pieds + Dépose</strong> – 30 €</div>
               </div>
-          
+
+              <div class="category" data-category="regard">
+                <h2>Le Regard</h2>
+                <div class="tarif"><strong>Rehaussement de Cils + Teinture</strong> – 70 €</div>
+                <div class="tarif"><strong>Browlift</strong> – 65 €</div>
+                <div class="tarif"><strong>Teinture des Cils</strong> – 15 €</div>
+                <div class="tarif"><strong>Teinture des Sourcils</strong> – 15 €</div>
+                <div class="tarif"><strong>Teinture + Épilation des Sourcils</strong> – 25 €</div>
+              </div>
+                
               <div class="category" data-category="cils">
-                <h2>Extension de Cils - Rehaussement</h2>
-                <div class="tarif"><strong>Rehaussement de cils avec teinture</strong> - 70 €</div>
+                <h2>Les Extensions de Cils</h2>
+                <div class="tarif"><strong>Pose Complète Cils à Cils</strong> – 70 €</div>
+                <div class="tarif"><strong>Remplissage Cils à Cils (jusqu’à 3 semaines)</strong> – 45 €</div>
+                <div class="tarif"><strong>Pose Complète Hybride (Cils à Cils + volume russe)</strong> – 80 €</div>
+                <div class="tarif"><strong>Remplissage Hybride (jusqu’à 3 semaines)</strong> – 50 €</div>
+                <div class="tarif"><strong>Pose Complète Volume Russe</strong> – 90 €</div>
+                <div class="tarif"><strong>Remplissage Volume Russe (jusqu’à 3 semaines)</strong> – 55 €</div>
+                <div class="tarif"><strong>Dépose Extensions de Cils</strong> – 15 €</div>
               </div>
-          
-              <div class="category" data-category="cils">
-                <h2>Extension de Cils - Cil à Cil</h2>
-                <div class="tarif"><strong>Pose complète cil à cil</strong> - 70 €</div>
-                <div class="tarif"><strong>Remplissage cil à cil jusqu’à 3 semaines</strong> - 45 €</div>
+
+              <div class="category" data-category="epilation">
+                <h2>Épilation Femme<br>~ Forfaits ~</h2>
+                <div class="tarif"><strong>Aisselles + Maillot Simple ou Échancré + 1/2 Jambes</strong> – 41 €</div>
+                <div class="tarif"><strong>Aisselles + Maillot Intégral + 1/2 Jambes</strong> – 47 €</div>
+                <div class="tarif"><strong>Aisselles + Maillot Simple ou Échancré + Cuisses</strong> – 45 €</div>
+                <div class="tarif"><strong>Aisselles + Maillot Intégral + Cuisses</strong> – 49 €</div>
+                <div class="tarif"><strong>Aisselles + Maillot Simple ou Échancré + Jambes Entières</strong> – 49 €</div>
+                <div class="tarif"><strong>Aisselles + Maillot Intégral + Jambes Entières</strong> – 55 €</div>
               </div>
-          
-              <div class="category" data-category="cils">
-                <h2>Extension de Cils - Hybride</h2>
-                <div class="tarif"><strong>Pose complète hybride</strong> - 80 €</div>
-                <div class="tarif"><strong>Remplissage hybride jusqu’à 3 semaines</strong> - 55 €</div>
+
+              <div class="category" data-category="epilation">
+                <h2>Épilation Femme <br>~ Corps ~</h2>
+                <div class="tarif"><strong>Aisselles</strong> – 10 €</div>
+                <div class="tarif"><strong>Maillot Simple ou Échancré</strong> – 19 €</div>
+                <div class="tarif"><strong>Maillot Intégral</strong> – 25 €</div>
+                <div class="tarif"><strong>1/2 Jambes</strong> – 17 €</div>
+                <div class="tarif"><strong>Cuisses</strong> – 19 €</div>
+                <div class="tarif"><strong>Jambes Entières</strong> – 25 €</div>
+                <div class="tarif"><strong>1/2 Bras</strong> – 15 €</div>
+                <div class="tarif"><strong>Bras</strong> – 19 €</div>
               </div>
-          
-              <div class="category" data-category="cils">
-                <h2>Extension de Cils - Volume Russe</h2>
-                <div class="tarif"><strong>Pose complète volume russe</strong> - 90 €</div>
-                <div class="tarif"><strong>Remplissage volume russe jusqu’à 3 semaines</strong> - 60 €</div>
-                <div class="tarif"><strong>Dépose extensions de cils</strong> - 15 €</div>
+
+              <div class="category" data-category="epilation">
+                <h2>Épilation Femme <br>~ Visage ~</h2><br/>
+                <div class="tarif"><strong>Sourcils</strong> – 15 €</div>
+                <div class="tarif"><strong>Lèvre</strong> – 8 €</div>
+                <div class="tarif"><strong>Menton</strong> – 8 €</div>
+                <div class="tarif"><strong>Joues</strong> – 10 €</div>
+                <div class="tarif"><strong>Nez</strong> – 5 €</div>
               </div>
+
+              <div class="category" data-category="epilation">
+                <h2>Épilation Homme <br>~ Visage ~</h2><br/>
+                <div class="tarif"><strong>Sourcils</strong> – 10 €</div>
+                <div class="tarif"><strong>Joues</strong> – 10 €</div>
+                <div class="tarif"><strong>Nez ou Oreilles</strong> – 8 €</div>
+              </div>
+
+              <div class="category" data-category="epilation">
+                <h2>Épilation Homme <br>~ Forfaits ~</h2><br/>
+                <div class="tarif"><strong>Dos + Torse</strong> – 45 €</div>
+              </div>
+
+              <div class="category" data-category="epilation">
+                <h2>Épilation Homme <br>~ Corps ~</h2><br/>
+                <div class="tarif"><strong>Dos</strong> – 26 €</div>
+                <div class="tarif"><strong>Torse</strong> – 26 €</div>
+                <div class="tarif"><strong>Épaules</strong> – 10 €</div>
+                <div class="tarif"><strong>Jambes Entières</strong> – 35 €</div>
+                <div class="tarif"><strong>1/2 Bras</strong> – 19 €</div>
+                <div class="tarif"><strong>Bras Entiers</strong> – 25 €</div>
+              </div> 
             </div>
           </section>
           
