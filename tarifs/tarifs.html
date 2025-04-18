@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Appart Beauté Institut - Votre beauté sublimée. Découvrez nos prestations : épilation, onglerie, extensions de cils.">
+    <meta name="robots" content="index, follow">
     <title>Tarifs - Appart Beauté Institut</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -13,6 +14,51 @@
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="tarifs.css">
+    <link rel="icon" type="image/png" href="../images/LOGO.png">
+
+    <!-- Balises Open Graph -->
+<meta property="og:title" content="Appart & Beauté - Institut de beauté à Marseille">
+<meta property="og:description" content="Épilation, onglerie, extensions de cils à La Valentine. Prenez rendez-vous avec Marjorie.">
+<meta property="og:image" content="https://appartbeauteinstitut.fr/images/LOGO.png">
+<meta property="og:url" content="https://appartbeauteinstitut.fr">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Appart & Beauté",
+  "image": "https://appartbeauteinstitut.fr/images/LOGO.png",
+  "url": "https://appartbeauteinstitut.fr",
+  "telephone": "+33613405635",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "17 rue de l'Audience",
+    "addressLocality": "Marseille",
+    "postalCode": "13011",
+    "addressCountry": "FR"
+  },
+  "openingHours": [
+    "Mo-Fr 10:00-19:00",
+    "Sa 10:00-16:00"
+  ],
+  "priceRange": "€",
+  "sameAs": [
+    "https://www.instagram.com/appartbeaute_institut/"
+  ]
+}
+</script>
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZX56PXVHHP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZX56PXVHHP');
+</script>
+
 </head>
 <body>
     <!-- Image d'arrière-plan -->
@@ -37,9 +83,10 @@
             <ul>
                 <li><a href="../index.html"><i class="fas fa-home"></i></a></li>
                 <li><a href="../prestations/prestations.html">Prestations</a></li>
-                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="./tarifs.html">Tarifs</a></li>
                 <li><a href="../contact/contact.html">Contact</a></li>
-                <li><a href="https://www.instagram.com/appartbeaute_institut/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.instagram.com/appartbeaute_institut/" target="_blank" aria-label="Voir le profil Instagram de Appart & Beauté"
+                  rel="noopener noreferrer" ><i class="fab fa-instagram"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -52,7 +99,7 @@
             <!-- Liste déroulante mobile -->
             <div class="filtre-tarifs custom-dropdown-mobile">
                 <div class="dropdown-label">Choisissez une prestation</div>
-                <div class="dropdown-selected" id="dropdownSelected">Toutes les prestations</div>
+                <div class="dropdown-selected" id="dropdownSelected" tabindex="0" role="button" aria-haspopup="listbox" aria-expanded="false">Toutes les prestations</div>
                 <ul class="dropdown-options" id="dropdownOptions">
                   <li data-value="all" class="active">Toutes les prestations</li>
                   <li data-value="onglerie">Onglerie</li>
@@ -115,7 +162,7 @@
               </div>
 
               <div class="category" data-category="epilation">
-                <h2>Épilation Femme<br>~ Forfaits ~</h2>
+                <h2>Épilation Femme <span>~ Forfaits ~</span></h2>
                 <div class="tarif"><strong>Aisselles + Maillot Simple ou Échancré + 1/2 Jambes</strong> – 41 €</div>
                 <div class="tarif"><strong>Aisselles + Maillot Intégral + 1/2 Jambes</strong> – 47 €</div>
                 <div class="tarif"><strong>Aisselles + Maillot Simple ou Échancré + Cuisses</strong> – 45 €</div>
@@ -125,7 +172,7 @@
               </div>
 
               <div class="category" data-category="epilation">
-                <h2>Épilation Femme <br>~ Corps ~</h2>
+                <h2>Épilation Femme <span>~ Corps ~</span></h2>
                 <div class="tarif"><strong>Aisselles</strong> – 10 €</div>
                 <div class="tarif"><strong>Maillot Simple ou Échancré</strong> – 19 €</div>
                 <div class="tarif"><strong>Maillot Intégral</strong> – 25 €</div>
@@ -137,7 +184,7 @@
               </div>
 
               <div class="category" data-category="epilation">
-                <h2>Épilation Femme <br>~ Visage ~</h2><br/>
+                <h2>Épilation Femme <span>~ Visage ~</span></h2>
                 <div class="tarif"><strong>Sourcils</strong> – 15 €</div>
                 <div class="tarif"><strong>Lèvre</strong> – 8 €</div>
                 <div class="tarif"><strong>Menton</strong> – 8 €</div>
@@ -146,19 +193,19 @@
               </div>
 
               <div class="category" data-category="epilation">
-                <h2>Épilation Homme <br>~ Visage ~</h2><br/>
+                <h2>Épilation Homme <span>~ Visage ~</span></h2>
                 <div class="tarif"><strong>Sourcils</strong> – 10 €</div>
                 <div class="tarif"><strong>Joues</strong> – 10 €</div>
                 <div class="tarif"><strong>Nez ou Oreilles</strong> – 8 €</div>
               </div>
 
               <div class="category" data-category="epilation">
-                <h2>Épilation Homme <br>~ Forfaits ~</h2><br/>
+                <h2>Épilation Homme <span>~ Forfaits ~</span></h2>
                 <div class="tarif"><strong>Dos + Torse</strong> – 45 €</div>
               </div>
 
               <div class="category" data-category="epilation">
-                <h2>Épilation Homme <br>~ Corps ~</h2><br/>
+                <h2>Épilation Homme <span>~ Corps ~</span></h2>
                 <div class="tarif"><strong>Dos</strong> – 26 €</div>
                 <div class="tarif"><strong>Torse</strong> – 26 €</div>
                 <div class="tarif"><strong>Épaules</strong> – 10 €</div>
@@ -173,8 +220,8 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-row">
-                <h2>Prendre Rendez-vous</h3>
-                <a href="https://www.planity.com/appart-beaute-13011-marseille" class="cta-button">Prendre Rendez-Vous</a>
+                <h2>Prendre Rendez-vous</h2>
+                <a href="https://www.planity.com/appart-beaute-13011-marseille" class="cta-button" rel="noopener noreferrer" >Prendre Rendez-Vous</a>
             </div>
             <div class="footer-columns">
                 <div class="footer-column">
@@ -207,7 +254,7 @@
                 <i class="fas fa-map-marker-alt"></i><br>
                 <span>Itinéraire</span>
             </a>
-            <a href="https://www.planity.com/appart-beaute-13011-marseille" target="_blank">
+            <a href="https://www.planity.com/appart-beaute-13011-marseille" target="_blank" rel="noopener noreferrer">
                 <i class="fas fa-calendar-alt"></i><br>
                 <span>Rendez-vous</span>
             </a>

@@ -4,15 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Appart Beauté Institut - Votre beauté sublimée. Découvrez nos prestations : épilation, onglerie, extensions de cils.">
-    <title>Appart & Beauté Institut</title>
+    <meta name="description" content="Institut de beauté à La Valentine (Marseille). Épilation, onglerie, rehaussement de cils et plus. Prendre rendez-vous avec Marjorie.">
+    <meta name="robots" content="index, follow">
+    <title>Appart & Beauté - Institut de Beauté à La Valentine Marseille </title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link href="stylesheet" href="reset.css">
-<link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./images/LOGO.png">
+<!-- Balises Open Graph -->
+<meta property="og:title" content="Appart & Beauté - Institut de beauté à Marseille">
+<meta property="og:description" content="Épilation, onglerie, extensions de cils à La Valentine. Prenez rendez-vous avec Marjorie.">
+<meta property="og:image" content="https://appartbeauteinstitut.fr/images/LOGO.png">
+<meta property="og:url" content="https://appartbeauteinstitut.fr">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Appart & Beauté",
+  "image": "https://appartbeauteinstitut.fr/images/LOGO.png",
+  "url": "https://appartbeauteinstitut.fr",
+  "telephone": "+33613405635",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "17 rue de l'Audience",
+    "addressLocality": "Marseille",
+    "postalCode": "13011",
+    "addressCountry": "FR"
+  },
+  "openingHours": [
+    "Mo-Fr 10:00-19:00",
+    "Sa 10:00-16:00"
+  ],
+  "priceRange": "€",
+  "sameAs": [
+    "https://www.instagram.com/appartbeaute_institut/"
+  ]
+}
+</script>
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZX56PXVHHP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZX56PXVHHP');
+</script>
+
 </head>
 <body>
     <!-- Image d'arrière-plan -->
@@ -21,7 +66,9 @@
     <!-- Contenu principal -->
     <header class="header">
         <div class="logo">
-            <img src="./images/LOGO.png" alt="Logo Appart Beauté Institut">
+            <a href="./index.html" aria-label="Accueil">
+                <img src="./images/LOGO.png" alt="Logo Appart Beauté Institut">
+              </a>
         </div>
         <div class="hamburger-container">
             <div class="hamburger" id="hamburger">
@@ -34,16 +81,15 @@
         
         <nav class="navigation">
             <ul>
-                <li><a href="#index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="./index.html"><i class="fas fa-home"></i></a></li>
                 <li><a href="./prestations/prestations.html">Prestations</a></li>
                 <li><a href="./tarifs/tarifs.html">Tarifs</a></li>
                 <li><a href="./contact/contact.html">Contact</a></li>
-                <li><a href="https://www.instagram.com/appartbeaute_institut/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.instagram.com/appartbeaute_institut/" target="_blank" rel="noopener noreferrer" aria-label="Voir le profil Instagram de Appart & Beauté"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </nav>
     </header>
-
-    <main>
+    <main role="main">
         <h1>Appart & Beauté, votre institut à la Valentine - Marseille</h1>
         <section class="swiper">
             <div class="swiper-wrapper">
@@ -64,7 +110,7 @@
                     <p>Bienvenue chez Appart & Beauté, votre institut de beauté situé à La Valentine. Marjorie, esthéticienne passionnée, met tout son savoir-faire à votre service pour vous offrir des soins personnalisés. Que ce soit pour une épilation précise, des ongles parfaits ou un regard sublimé grâce aux extensions de cils, laissez-vous chouchouter dans un cadre chaleureux et apaisant. Accordez-vous une parenthèse beauté et bien-être !</p>
                 </div>
             </div>
-            <a href="https://www.planity.com/appart-beaute-13011-marseille" class="cta-button" target="_blank">Prendre Rendez-Vous</a>
+            <a href="https://www.planity.com/appart-beaute-13011-marseille" class="cta-button" target="_blank" rel="noopener noreferrer">Prendre Rendez-Vous</a>
         </section>
         <section class="services">
             <h2>Un savoir-faire unique, une passion pour chaque détail</h2>  
@@ -92,13 +138,11 @@
             </div>
         </section>
         
-        </section>
-        
     </main>
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-row">
-                <h2>Restons en contact</h3>
+                <h2>Restons en contact</h2>
                 <a href="./contact/contact.html" class="cta-button">Contactez-moi</a>
             </div>
             <div class="footer-columns">

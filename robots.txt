@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /legal/
+Allow: /
+
+Sitemap: https://www.appartbeauteinstitut.fr/sitemap.xml
