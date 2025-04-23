@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.appartbeauteinstitut.fr/</loc>
-    <lastmod>2025-04-18</lastmod>
+    <loc>https://www.appartbeauteinstitut.com/</loc>
+    <lastmod>2025-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.appartbeauteinstitut.fr/prestations/prestations.html</loc>
-    <lastmod>2025-04-18</lastmod>
+    <loc>https://www.appartbeauteinstitut.com/prestations.html</loc>
+    <lastmod>2025-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.appartbeauteinstitut.fr/tarifs/tarifs.html</loc>
-    <lastmod>2025-04-18</lastmod>
+    <loc>https://www.appartbeauteinstitut.com/tarifs.html</loc>
+    <lastmod>2025-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.appartbeauteinstitut.fr/contact/contact.html</loc>
-    <lastmod>2025-04-18</lastmod>
+    <loc>https://www.appartbeauteinstitut.com/contact.html</loc>
+    <lastmod>2025-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.appartbeauteinstitut.com/legal.html</loc>
+    <lastmod>2025-04-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
